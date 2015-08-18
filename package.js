@@ -8,9 +8,9 @@ Package.describe({
 Package.onUse(function (api, where) {
 
   api.use([
-    'tracker',
-    'reactive-var',
-    'reactive-dict'
+    'tracker@1.0.7',
+    'reactive-dict@1.1.0',
+    'reactive-var@1.0.5'
   ], 'client');
 
   api.addFiles([
