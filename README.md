@@ -9,17 +9,17 @@ Installation
 ------------
 
 ``` sh
-meteor add gwendall:reactive-watch
+meteor add gwendall:reactive-watcher
 ```
 
 Methods
 ----------
 
-## Reactive Var methods ##
+### Reactive Var methods
 **watch(callback)**  
 Watch changes of a single variable.  
 
-## Reactive Dict methods ##
+### Reactive Dict methods
 **watch(key, callback)**  
 Watch changes of a single variable.  
 
