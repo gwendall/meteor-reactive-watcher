@@ -40,7 +40,7 @@ Template.foo.onCreated(function() {
 
   var reactiveVar = new ReactiveVar(null);
   this.reactiveVarWatcher = reactiveVar.watch(function(value) {
-    console.log('The value of 'name' changed! It is now: ' + value);
+    console.log('The value of "name" changed! It is now: ' + value);
   });
 
   //////////////////////////////////
@@ -49,10 +49,10 @@ Template.foo.onCreated(function() {
 
   var reactiveDict = new ReactiveDict(null);
   this.reactiveDictWatcher = reactiveDict.watch('name', function(value) {
-    console.log('The value of 'name' changed! It is now: ' + value);
+    console.log('The value of "name" changed! It is now: ' + value);
   });
   this.reactiveDictGroupWatcher = reactiveDict.watchGroup(['name', 'age'], function(values) {
-    console.log('The value of either 'name' or 'age' changed! Their new values are now the following.');
+    console.log('The value of either "name" or "age" changed! Their new values are now the following.');
     for (var key in values) {
       console.log(key + ': ' + values[k]);
     }
@@ -63,10 +63,10 @@ Template.foo.onCreated(function() {
   /////////////////////////////
 
   this.sessionWatcher = Session.watch('name', function(value) {
-    console.log('The value of 'name' changed! It is now: ' + value);
+    console.log('The value of "name" changed! It is now: ' + value);
   });
   this.sessionGroupWatcher = Session.watchGroup(['name', 'age'], function(values) {
-    console.log('The value of either 'name' or 'age' changed! Their new values are now the following.');
+    console.log('The value of either "name" or "age" changed! Their new values are now the following.');
     for (var key in values) {
       console.log(key + ': ' + values[k]);
     }
