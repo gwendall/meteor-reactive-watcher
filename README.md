@@ -33,12 +33,20 @@ Example
 
 ``` javascript
 Template.foo.onCreated(function() {
+
+  /////////////////////////////////
   // 1. With a ReactiveVar variable
+  /////////////////////////////////
+
   var reactiveVar = new ReactiveVar(null);
   this.reactiveVarWatcher = reactiveVar.watch(function(value) {
     console.log('The value of 'name' changed! It is now: ' + value);
   });
+
+  //////////////////////////////////
   // 2. With a ReactiveDict variable
+  //////////////////////////////////
+
   var reactiveDict = new ReactiveDict(null);
   this.reactiveDictWatcher = reactiveDict.watch('name', function(value) {
     console.log('The value of 'name' changed! It is now: ' + value);
@@ -49,7 +57,11 @@ Template.foo.onCreated(function() {
       console.log(key + ': ' + values[k]);
     }
   });
+
+  /////////////////////////////
   // 3. With a Session variable
+  /////////////////////////////
+
   this.sessionWatcher = Session.watch('name', function(value) {
     console.log('The value of 'name' changed! It is now: ' + value);
   });
@@ -59,6 +71,7 @@ Template.foo.onCreated(function() {
       console.log(key + ': ' + values[k]);
     }
   });
+
 });
 
 Template.foo.onDestroyed(function() {
