@@ -1,5 +1,5 @@
-Meteor Session watch
-=================
+Meteor Reactive Watcher
+=======================
 
 Adds watch methods to reactive variables. Works with ReactiveVar, ReactiveDict - and by extension Session variables.  
 Inspired by Angular's $watch function.
