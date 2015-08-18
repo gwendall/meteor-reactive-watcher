@@ -1,6 +1,6 @@
 Package.describe({
   name: 'gwendall:reactive-watcher',
-  summary: 'Watch changes of specific reactive variables',
+  summary: 'Watch changes of reactive variables',
   git: 'https://github.com/gwendall/meteor-reactive-watcher.git',
   version: '0.1.0'
 });
