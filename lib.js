@@ -31,7 +31,6 @@ ReactiveDict.prototype.watchGroup = function(keys, hook) {
 
 ReactiveVar.prototype.watch = function(hook) {
   var instance = this;
-  if (key.constructor !== String) return;
   if (hook.constructor !== Function) return;
   return Tracker.autorun(function() {
     var value = instance.get();

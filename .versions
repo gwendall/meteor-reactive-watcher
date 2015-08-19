@@ -1,6 +1,6 @@
 base64@1.0.3
 ejson@1.0.6
-gwendall:reactive-watcher@0.1.0
+gwendall:reactive-watcher@0.1.1
 json@1.0.3
 meteor@1.1.6
 reactive-dict@1.1.0
